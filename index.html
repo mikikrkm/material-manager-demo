@@ -710,7 +710,7 @@ body {
 
 <!-- ===== HEADER ===== -->
 <header class="header">
-  <a class="header-logo" href="top.html">
+  <a class="header-logo" href="index.html">
     <div class="logo-icon">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
         <rect x="3" y="3" width="7" height="7" rx="1"/>
@@ -725,7 +725,7 @@ body {
     <a class="nav-link" href="index.html">素材一覧</a>
     <a class="nav-link" href="#">カテゴリ</a>
     <a class="nav-link" href="#">使い方</a>
-    <a class="nav-btn" href="index.html">
+    <a class="nav-btn" href="search.html">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/>
       </svg>
@@ -1051,7 +1051,7 @@ function switchTab(tabKey, el) {
   document.getElementById('panel-' + tabKey).classList.add('active');
 
   // 「もっと見る」リンクのURLを更新
-  document.getElementById('recMoreLink').href = 'index.html?subcat=' + tabKey;
+  document.getElementById('recMoreLink').href = 'search.html?subcat=' + tabKey;
 }
 
 /* =====================================================
@@ -1114,10 +1114,10 @@ function quickSearch(keyword) {
 }
 
 /* =====================================================
-   素材詳細へ（index.htmlへ遷移）
+   素材詳細へ（search.htmlへ遷移）
 ===================================================== */
 function goToItem(id) {
-  location.href = 'index.html?item=' + id;
+  location.href = 'search.html?item=' + id;
 }
 
 /* =====================================================
