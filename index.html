@@ -1105,7 +1105,7 @@ function goSearch() {
   const params = new URLSearchParams();
   if (q) params.set('q', q);
   if (type !== 'all') params.set('subcat', type);
-  location.href = 'index.html' + (params.toString() ? '?' + params.toString() : '');
+  location.href = 'search.html' + (params.toString() ? '?' + params.toString() : '');
 }
 
 function quickSearch(keyword) {
